@@ -7,9 +7,26 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header><span id="name" data-bind="text: name"></span><span id="title" data-bind="text: title"></header>
-        <h3>About Me</h3>
-        <p id='about' data-bind='html: about'></p>
+        <div class='page' id='zero'>
+            <header><span id="name" data-bind="text: name"></span><span id="title" data-bind="text: title"></header>
+            <h3>About Me</h3>
+            <p id='about' data-bind='html: about'></p>
+            <div class='wave_bottom'></div>
+        </div>
+
+        <div class='page' id='one'>
+
+        </div>
+        <div class='page' id='two'>
+            <div class='wave_top'></div>
+            <div class='wave_bottom'></div>
+        </div>
+        <div class='page' id='three'>
+              <div class='wave_bottom'></div>
+        </div>
+        <div class='page' id='four'>
+        </div>
+
       <!--<script type="text/javascript" src="js/app.js"></script>-->
         <script type="text/javascript">
             var viewModel = function(){
