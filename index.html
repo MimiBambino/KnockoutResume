@@ -7,12 +7,16 @@
         <link rel="stylesheet" type="text/css" href="css/styles.css">
     </head>
     <body>
-        <header><span data-bind="text: name"></span></header>
+        <header><span id="name" data-bind="text: name"></span><span id="title" data-bind="text: title"></header>
+        <h3>About Me</h3>
+        <p id='about' data-bind='html: about'></p>
       <!--<script type="text/javascript" src="js/app.js"></script>-->
         <script type="text/javascript">
             var viewModel = function(){
                 var self = this;
                 self.name = "Cynthia O'Donnell";
+                self.title = "Web Developer";
+                self.about = "Hi, I'm Cynthia and I speak English, <span class='javascript'>JavaScript</span>, <span class='html5'>HTML5</span>, <span class='css3'>CSS3</span> and German in that order. As a <span class='developer'>web developer</span>, I tend to use the leanest framework for the job. For that reason, <span class='knockout'>KnockoutJS</span> and <span class='react'>ReactJS</span> are my favorites. As for CSS, I tend to write my own and only use frameworks when necessary, but I favor <span class='bootstrap'>Bootstrap</span> and <span class='flexbox'>Flexbox Grid</span>."
             };
             ko.applyBindings( new viewModel() );
         </script>

@@ -1,0 +1,45 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700|Montez);
+
+* {
+	box-sizing: border-box;
+	font-family: Lato;
+}
+
+body {
+	width: 85%;
+	margin: auto;
+}
+
+#name {
+	display: block;
+	font-family: 'Montez', cursive;
+	font-size: 5.2em;
+	font-weight: 100;
+	line-height: 1.1;
+	color: #008cb0;
+	margin-top: 20px;
+ 	margin-bottom: 10px;
+ 	margin: .67em 0;
+ 	text-align: center;
+}
+
+#about {
+	width: 25%;
+	float: right;
+	text-align: justify;
+	font-size: 1.3em;
+}
+
+h3 {
+	text-align: right;
+	padding-right: 10%;
+}
+
+.javascript {
+	color: #008cb0;
+}
+.html5 {}
+.css3 {}
+.developer {}
+.knockout {}
+.react {}
